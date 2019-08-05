@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<script src="js/jquery-1.12.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/echarts.js"></script>
+	</head>
+	<body>
+		<header>
+			<nav class="nav">
+				<div class="contanier-fluid">
+					<div class="nav-header">
+						<img src="img/logo.png" />
+					</div>
+					<div class="nav-sm">
+						<div class="nav-left">
+							<div class="menu-icon-box color-gray">
+								<span class="icon-reorder"></span>
+							</div>
+							<div class="search">
+								<div class="search-icon-box color-gray">
+									<span class="icon-search"></span>
+								</div>
+								<input type="text" placeholder="搜索内容..." />
+							</div>
+						</div>
+						<div class="n-right color-gray">
+							<span class="hidden-xs hidden-sm">欢迎你，Amaze UI</span>
+							<span class="icon-envelope">
+								<span class="badge" style="background:#5eb95e">4</span>
+							</span>
+							<span class="icon-bell-alt">
+								<span class="badge" style="background:#f37b1d">5</span>
+							</span>
+							<span class="clos">
+								<span class="icon-hand-right"></span>
+								退出
+							</span>
+						</div>
+					</div>
+
+				</div>
+
+			</nav>
+		</header>
+		<div class="main">
+			<div class="right-sidebar">
+				<div class="avatarbox">
+					<img class="img-circle" src="img/user04.png" />
+					<p>
+						<span class="icon-circle-blank color-green"></span>
+						<span class="color-white">禁言小张</span>
+						<a href="" class="color-text-gray">
+							<span class="icon-magic"></span>
+							<span>账号设置</span>
+						</a>
+					</p>
+				</div>
+				<div class="sidebar-menu color-bg-gray">
+					<ul class="color-gray">
+						<div class="sidebar-title">
+							<h5><span class="color-white">Components</span> <small>附加组件</small></h5>
+						</div>
+						<li class="active">
+							<span class="icon-laptop"></span>
+							<span>首页</span>
+						</li>
+						<li class="tab" data-href="page/table/table.html">
+							<span class="icon-table"></span>
+							<span>表格</span>
+						</li>
+						<li class="th1" data-href="page/th1/th1.html">
+							<span class="icon-th"></span>
+							<span>日历</span>
+						</li>
+						<li class="form" data-href="page/form/form.html">
+							<span class="icon-list-alt"></span>
+							<span>表单</span>
+						</li>
+						<li class="arts" data-href="page/arts/arts.html">
+							<span class="icon-bar-chart"></span>
+							<span>图表</span>
+						</li>
+					</ul>
+					<ul class="color-gray">
+						<div class="sidebar-title">
+							<h5><span class="color-white">Page</span> <small>常用页面</small></h5>
+						</div>
+						<li id="collapse-m" data-toggle="collapse" data-target="#collapse-menu">
+							<span class="icon-table"></span>
+							<span>数据列表</span>
+							<span class="icon-chevron-down arrow-down"></span>
+						</li>
+						<ol class="collapse" id="collapse-menu">
+							<li class="text-list" data-href="page/text-list/text-list.html">
+								<span class="icon-angle-right"></span>
+								<span>文字列表</span>
+							</li>
+							<li>
+								<span class="icon-angle-right"></span>
+								<span>图文列表</span>
+							</li>
+						</ol>
+						<li>
+							<span class="icon-paper-clip"></span>
+							<span>注册</span>
+							<span class="badge color-bg-blue">6</span>
+						</li>
+						<li>
+							<span class="icon-link"></span>
+							<span>登录</span>
+						</li>
+						<li>
+							<span class="icon-desktop"></span>
+							<span>404错误</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="main-content">
+				<div class="main-content-head color-bg-gray1">
+					<div class="content-head-left">
+						<h4><span class="icon-laptop color-white"><span><span class="color-white"> 部件首页</span> <small>Amaze UI</small></h4>
+						<p class="color-white">Amaze UI 含近 20 个 CSS 组件、20 余 JS 组件，更有多个包含不同主题的 Web 组件。</p>
+					</div>
+					<div class="content-head-right bg-hover-white color-gray hidden-sm hidden-xs">
+						<span class="icon-magic"></span>
+						<h3>设置</h3>
+					</div>
+				</div>
+				<div class="home-con">
+					<div class="row">
+						<div class="col-lg-4 col-sm-12 col-xs-12">
+							<div class="home-money home-money1 color-white">
+								<div class="home-money1-top">
+									<span>月度财务收支计划</span>
+									<i class="icon-cog"></i>
+								</div>
+								<div class="home-money1-bottom">
+									<div class="home-money1-bottom-left">
+										<span>￥61746.45</span>
+										<div class="bg-hover-white">
+											<i class="icon-th"></i>
+											<span>更多月份</span>
+										</div>
+									</div>
+									<div class="home-money1-bottom-right">
+										<span class="color-green">+￥30420.56</span>
+										<p>8月份收入</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-sm-6 col-xs-12">
+							<div class="home-money home-money2">
+								<p class="home-money-blue">本季度利润</p>
+								<p class="home-money-white">￥27,294</p>
+								<p class="home-money-blue">本季度比去年多收入 2593元 人民币</p>
+							</div>
+						</div>
+						<div class="col-lg-4 col-sm-6 col-xs-12">
+							<div class="home-money home-money3">
+								<p class="home-money-blue">本季度利润</p>
+								<p class="home-money-white">￥27,294</p>
+								<p class="home-money-blue">本季度比去年多收入 2593元 人民币</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="home-con1">
+					<div class="row">
+						<div class="col-lg-8 col-sm-8 hidden-xs">
+							<div class="home-money home-money1 color-white">
+								<div class="home-money1-top">
+									<span>月度财务收支计划</span>
+									<i class="icon-cog"></i>
+								</div>
+								<div id="creaseLine" style="width: 100%;height:220px;">
+
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-sm-4 col-xs-12">
+							<div class="home-money home-money1 color-white">
+								<div class="home-money1-top">
+									<span>专用服务器负载</span>
+									<i class="icon-cog"></i>
+								</div>
+								<div class="home-money1-bottom">
+									<p>
+										<span class="">CPU Load</span>
+										<span class="">28% / 100%</span>
+									</p>
+									<div class="progress">
+										<div class="progress-bar progress-bar-info" style="width: 40%;"></div>
+									</div>
+									<p>
+										<span class="">CPU Load</span>
+										<span class="">28% / 100%</span>
+									</p>
+									<div class="progress">
+										<div class="progress-bar progress-bar-success" style="width: 60%;"></div>
+									</div>
+									<p>
+										<span class="">CPU Load</span>
+										<span class="">28% / 100%</span>
+									</p>
+									<div class="progress">
+										<div class="progress-bar progress-bar-warning" style="width: 20%;"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="home-con2">
+					<div class="row">
+						<div class="col-lg-4 col-sm-12 col-xs-12">
+							<div class="home-money home-money2 color-white">
+								<p>禁言小张</p>
+								<p>月度最佳员工</p>
+								<p><img class="img-circle" src="img/user07.png" /></p>
+								<p>禁言小张在 30天内 禁言了 200多人。</p>
+							</div>
+						</div>
+						<div class="col-lg-8 col-sm-12 col-xs-12">
+							<div class="home-money home-money1 color-white">
+								<table class="table">
+									<tr>
+										<th>文章标题</th>
+										<th>作者</th>
+										<th>时间</th>
+										<th>操作</th>
+									</tr>
+									<tr>
+										<td>Docker领域再添一员，网易云发布“蜂巢”，加入云计算之争</td>
+										<td>醉里挑灯看键</td>
+										<td>2016-09-26</td>
+										<td>
+											<span>
+												<i class="icon-magic"></i>
+												编辑
+											</span>
+											<span>
+												<i class="icon-trash"></i>
+												删除
+											</span>
+										</td>
+									</tr>
+									<tr>
+										<td>关于创新管理，我想和你当面聊聊。</td>
+										<td>王宽师</td>
+										<td>2016-09-26</td>
+										<td>
+											<span>
+												<i class="icon-magic"></i>
+												编辑
+											</span>
+											<span>
+												<i class="icon-trash"></i>
+												删除
+											</span>
+										</td>
+									</tr>
+									<tr>
+										<td>新加坡大数据初创公司 Latize 获 150 万美元风险融资</td>
+										<td>张鹏飞</td>
+										<td>2016-09-26</td>
+										<td>
+											<span>
+												<i class="icon-magic"></i>
+												编辑
+											</span>
+											<span>
+												<i class="icon-trash"></i>
+												删除
+											</span>
+										</td>
+									</tr>
+									<tr>
+										<td>究竟是趋势带动投资，还是投资引领趋势?</td>
+										<td>着迷</td>
+										<td>2016-09-26</td>
+										<td>
+											<span>
+												<i class="icon-magic"></i>
+												编辑
+											</span>
+											<span>
+												<i class="icon-trash"></i>
+												删除
+											</span>
+										</td>
+									</tr>
+									<tr>
+										<td>自拍的“政治角色”：观众背对希拉里自拍合影表示“支持” </td>
+										<td>天纵之人 </td>
+										<td>2016-09-26</td>
+										<td>
+											<span>
+												<i class="icon-magic"></i>
+												编辑
+											</span>
+											<span>
+												<i class="icon-trash"></i>
+												删除
+											</span>
+										</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/base.js">
+		
+
+	</script>
+	<script>
+		$(".index").addClass("active")
+
+		var creaseLine = echarts.init(document.getElementById('creaseLine'));
+		var creaseLineOption = {
+			tooltip: {
+				trigger: 'axis',
+				axisPointer: {
+					type: 'cross',
+					label: {
+						backgroundColor: '#6a7985'
+					}
+				}
+			},
+			legend: {
+				data: []
+			},
+			grid: {
+				left: '3%',
+				right: '4%',
+				bottom: '3%',
+				containLabel: true
+			},
+			xAxis: [{
+				type: 'category',
+				boundaryGap: false,
+				data: ['周一', '周二', '周三', '周四', '周五', '周六', '周日']
+			}],
+			yAxis: [{
+				type: 'value'
+			}],
+			series: [{
+					name: '邮件',
+					type: 'line',
+					stack: '总量',
+					areaStyle: {},
+					data: [120, 132, 101, 134, 90, 230, 210]
+				},
+
+		
+			]
+		};
+		creaseLine.setOption(creaseLineOption);
+	</script>
+</html>

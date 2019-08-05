@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="../../css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/base.css" />
+		<script src="../../js/jquery-1.12.1.min.js"></script>
+		<script src="../../js/bootstrap.min.js"></script>
+		<style>
+			.home-con2 .home-money1 {
+				height: auto;
+				padding: 0;
+			}
+
+			.table-striped>tbody>tr:nth-of-type(odd) {
+				background-color: #4b5357;
+			}
+
+			.table-striped>tbody>tr:nth-of-type(even) {
+				background-color: #5d6468;
+			}
+
+			@madia screen and (max-width:664px) {
+				.home-con2 .table span {
+					display: inline-block;
+				}
+			}
+
+			.home-con2 .home-money1 {
+				padding-bottom: 20px;
+				margin-bottom: 20px;
+			}
+
+			.main  .dropdown {
+				padding: 0 5px;
+				color: #fff;
+				line-height: 30px;
+				border: 1px solid rgba(255, 255, 255, 0.2);
+			}
+			.main form input:focus{
+				-webkit-box-shadow: none;
+				box-shadow: none;
+			}
+			.main form  input{
+				border: 0;
+				border: 1px solid rgba(255, 255, 255, 0.2);
+				background-color: transparent;
+				outline: 0;
+				color: white;
+				padding: 0;
+				border-radius: 0;
+			}
+			.main  .dropdown p {
+				margin: 0;
+			}
+
+			.main  .dropdown .caret {
+				float: right;
+				margin-top: 15px;
+			}
+
+			.container-form {
+				width: 95%;
+				margin: 0 auto;
+			}
+			.line-form .home-money>.row{
+				padding: 20px;
+			}
+			.right-drop{
+				padding: 0;
+			}
+			.input-group-addon{
+				background-color: #5cb85c;
+			}
+
+		</style>
+	</head>
+	<body>
+		<header></header>
+		<div class="main">
+			<div class="main-content">
+				<div class="container-form">
+					<div class="home-con2">
+						<div class="row">
+							<div class="line-form">
+								<div class="home-money home-money1 color-white">
+									<div class="home-money1-top">
+										<span>文章列表</span>
+									</div>
+									<div class="row">
+										<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+											<div class="btn-group btn-group-sm">
+												<button type="button" class="btn btn-success">
+													<span class="icon-move"></span>
+													新增
+												</button>
+												<button type="button" class="btn btn-primary">
+													<span class="icon-save"></span>
+													保存
+												</button>
+												<button type="button" class="btn btn-warning">
+													<span class="icon-columns"></span>
+													审核
+												</button>
+												<button type="button" class="btn btn-danger">
+													<span class="icon-trash"></span>
+													删除
+												</button>
+											</div>
+										</div>
+										<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+											<div class="row right-drop">
+												<div class="dropdown col-lg-6 col-md-6 col-sm-6">
+													<p id="author" data-toggle="dropdown">
+														所有类别
+														<span class="caret"></span>
+													</p>
+													<ul class="dropdown-menu">
+														<li><a href="javascript:;">-The.CC</a></li>
+														<li><a href="javascript:;">西风色</a></li>
+														<li><a href="javascript:;">Orange</a></li>
+													</ul>
+												</div>
+												<form class="form-inline col-lg-6 col-md-6 col-sm-6">
+													<div class="form-group">
+
+														<div class="input-group">
+															<input type="text" class="form-control" id="exampleInputAmount" placeholder="">
+															<div class="input-group-addon"><span class="icon-search"></span></div>
+														</div>
+													</div>
+												</form>
+											</div>
+
+
+										</div>
+
+									</div>
+									<div class="row">
+										<table class="table table-striped" style="">
+											<tr>
+												<th>文章标题</th>
+												<th>作者</th>
+												<th>时间</th>
+												<th>操作</th>
+											</tr>
+											<tr>
+												<td>Docker领域再添一员，网易云发布“蜂巢”，加入云计算之争</td>
+												<td>醉里挑灯看键</td>
+												<td>2016-09-26</td>
+												<td>
+													<span>
+														<i class="icon-magic"></i>
+														编辑
+													</span>
+													<span>
+														<i class="icon-trash"></i>
+														删除
+													</span>
+												</td>
+											</tr>
+											<tr>
+												<td>关于创新管理，我想和你当面聊聊。</td>
+												<td>王宽师</td>
+												<td>2016-09-26</td>
+												<td>
+													<span>
+														<i class="icon-magic"></i>
+														编辑
+													</span>
+													<span>
+														<i class="icon-trash"></i>
+														删除
+													</span>
+												</td>
+											</tr>
+											<tr>
+												<td>新加坡大数据初创公司 Latize 获 150 万美元风险融资</td>
+												<td>张鹏飞</td>
+												<td>2016-09-26</td>
+												<td>
+													<span>
+														<i class="icon-magic"></i>
+														编辑
+													</span>
+													<span>
+														<i class="icon-trash"></i>
+														删除
+													</span>
+												</td>
+											</tr>
+											<tr>
+												<td>究竟是趋势带动投资，还是投资引领趋势?</td>
+												<td>着迷</td>
+												<td>2016-09-26</td>
+												<td>
+													<span>
+														<i class="icon-magic"></i>
+														编辑
+													</span>
+													<span>
+														<i class="icon-trash"></i>
+														删除
+													</span>
+												</td>
+											</tr>
+											<tr>
+												<td>自拍的“政治角色”：观众背对希拉里自拍合影表示“支持” </td>
+												<td>天纵之人 </td>
+												<td>2016-09-26</td>
+												<td>
+													<span>
+														<i class="icon-magic"></i>
+														编辑
+													</span>
+													<span>
+														<i class="icon-trash"></i>
+														删除
+													</span>
+												</td>
+											</tr>
+										</table>
+										<nav style="float: right;" aria-label="Page navigation">
+											<ul class="pagination">
+												<li>
+													<a href="#" aria-label="Previous">
+														<span aria-hidden="true">&laquo;</span>
+													</a>
+												</li>
+												<li><a href="#">1</a></li>
+												<li><a href="#">2</a></li>
+												<li><a href="#">3</a></li>
+												<li><a href="#">4</a></li>
+												<li><a href="#">5</a></li>
+												<li>
+													<a href="#" aria-label="Next">
+														<span aria-hidden="true">&raquo;</span>
+													</a>
+												</li>
+											</ul>
+										</nav>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+<script src="../../js/html.js"></script>
+<script src="../../js/base.js"></script>
+<script>
+	$(function(){
+		$(".text-list").addClass("active");
+		$("#collapse-menu").addClass('in');
+	})
+	
+</script>

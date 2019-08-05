@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="../../css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/base.css" />
+		<link rel="stylesheet" href="css/jtoggler.styles.css">
+		<script src="../../js/jquery-1.12.1.min.js"></script>
+		<script src="../../js/bootstrap.min.js"></script>
+		<script src="js/jtoggler.js"></script> 
+		<style>
+			.home-con2 .home-money1 {
+				height: auto;
+				padding: 0;
+			}
+
+			.table-striped>tbody>tr:nth-of-type(odd) {
+				background-color: #4b5357;
+			}
+
+			.table-striped>tbody>tr:nth-of-type(even) {
+				background-color: #5d6468;
+			}
+
+			@madia screen and (max-width:664px) {
+				.home-con2 .table span {
+					display: inline-block;
+				}
+			}
+			form{
+				margin-top: 20px;
+			}
+			.home-con2 .home-money1{	
+				padding-bottom:20px;
+				margin-bottom: 20px;
+			}
+			.main form .form-control{
+				border: 0;
+
+				background-color: transparent;
+				outline: 0;
+				color: white;
+				padding: 0;
+				border-radius: 0;
+			}
+			.main form .form-control:focus{
+				-webkit-box-shadow: none;
+				box-shadow: none;
+			}
+			.main  .dropdown{
+				padding: 0 5px;
+				color: #fff;
+				line-height: 30px;
+				border: 1px solid rgba(255, 255, 255, 0.2);
+			}
+			.main  .dropdown p{
+				margin: 0;
+			}
+			.main  .dropdown .caret{
+				float: right;
+				margin-top: 15px;
+			}
+			.container-form{
+				width: 95%;
+				margin: 0 auto;
+			}
+			.main .line-form form .form-control{
+				border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+			}
+			.main .border-form form .form-control{
+				border: 1px solid rgba(255, 255, 255, 0.2);
+			}
+			.border-wrap form{
+				padding: 0 20px;
+			}
+			.jtoggler-wrapper{
+				display: inline-block;
+				margin-bottom: -10px;
+			}
+		</style>
+	</head>
+	<body>
+		<header></header>
+		<div class="main">
+			<div class="main-content">
+				<div class="main-content-head color-bg-gray1">
+					<div class="content-head-left">
+						<h4><span class="icon-laptop color-white"><span><span class="color-white">表单</span> <small>Amaze UI</small></h4>
+						<p class="color-white">Amaze UI 有许多不同的表单可用。</p>
+					</div>
+					<div class="content-head-right color-gray hidden-sm hidden-xs">
+						<span class="icon-magic"></span>
+						<h3>设置</h3>
+					</div>
+				</div>
+				<div class="container-form">
+					<div class="home-con2">
+						<div class="row">
+							<div class="line-form">
+								<div class="home-money home-money1 color-white">
+									<div class="home-money1-top">
+										<span>线条表单</span>
+										<i class="icon-cog"></i>
+									</div>
+									<form class="form-horizontal">
+										<div class="form-group">
+											<label for="title" class="col-xs-3 control-label">
+												<h5>标题<small> Title</small></h5>
+											</label>
+											<div class="col-xs-8">
+												<input type="email" class="form-control" id="title" placeholder="请输入标题文字">
+												<p>请填写标题文字10-20字左右。</p>
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="time" class="col-xs-3 control-label">
+												<h5>发布时间 <small>Time</small></h5>
+											</label>
+											<div class="col-xs-8">
+												<input type="password" class="form-control" id="time" placeholder="发布时间">
+												<p>发布时间为必填</p>
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="author" class="col-xs-3 control-label">
+												<h5>作者 <small>Author</small></h5>
+											</label>
+											<div class="col-xs-3">
+												<div class="dropdown">
+													<p id="author" data-toggle="dropdown">
+														-The.CC
+														<span class="caret"></span>
+													</p>
+													<ul class="dropdown-menu">
+														<li><a href="javascript:;">-The.CC</a></li>
+														<li><a href="javascript:;">西风色</a></li>
+														<li><a href="javascript:;">Orange</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="seo" class="col-xs-3 control-label">
+												<h5>SEO关键字 <small>SEO</small></h5>
+											</label>
+											<div class="col-xs-8">
+												<input type="password" class="form-control" id="seo" placeholder="输入SEO关键字">
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="fimg" class="col-xs-3 control-label">
+												<h5>封面图 <small>Images</small></h5>
+											</label>
+											<div class="col-xs-8">
+												<div>
+													<img class="img-responsive" src="../../img/a5.png">
+												</div>
+												<label for="inputFile">
+													<p class="btn btn-danger">
+														<span class="icon-cloud-upload"></span>
+														<span>添加封面图片</span>
+													</p>
+													<input type="file" id="inputFile" style="visibility: hidden;" />
+												</label>
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="fenlei" class="col-xs-3 control-label">
+												<h5>添加分类 <small>Type</small></h5>
+											</label>
+											<div class="col-xs-8">
+												<input type="password" class="form-control" id="fenlei" placeholder="请添加分类用点号隔开">
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="arti" class="col-xs-3 control-label">
+												<h5>隐藏文章</h5>
+											</label>
+											<div class="col-xs-8">
+												<label class="jtoggler-wrapper">
+													<input type="checkbox" checked="" class="jtoggler">
+													<div class="jtoggler-control">
+														<div class="jtoggler-handle"></div>
+													</div>
+												</label>
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="text" class="col-xs-3 control-label">
+												<h5>文章内容</h5>
+											</label>
+											<div class="col-xs-8">
+												<textarea rows="10" id="text" class="form-control" placeholder="请输入文章内容"></textarea>
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="text" class="col-xs-3 control-label">
+
+											</label>
+											<div class="col-xs-8">
+												<button class="btn btn-primary" type="button">提交</button>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+							
+							
+							
+							
+							
+							<div class="border-form">
+								<div class="home-money home-money1 color-white">
+									<div class="home-money1-top">
+										<span>边框表单</span>
+										<i class="icon-cog"></i>
+									</div>
+									<form class="form-horizontal">
+										<div class="form-group">
+											<label for="title" class="col-xs-3 control-label">
+												<h5>标题<small> Title</small></h5>
+											</label>
+											<div class="col-xs-8">
+												<input type="email" class="form-control" id="title" placeholder="请输入标题文字">
+												<p>请填写标题文字10-20字左右。</p>
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="time" class="col-xs-3 control-label">
+												<h5>发布时间 <small>Time</small></h5>
+											</label>
+											<div class="col-xs-8">
+												<input type="password" class="form-control" id="time" placeholder="发布时间">
+												<p>发布时间为必填</p>
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="author" class="col-xs-3 control-label">
+												<h5>作者 <small>Author</small></h5>
+											</label>
+											<div class="col-xs-3">
+												<div class="dropdown">
+													<p id="author" data-toggle="dropdown">
+														-The.CC
+														<span class="caret"></span>
+													</p>
+													<ul class="dropdown-menu">
+														<li><a href="javascript:;">-The.CC</a></li>
+														<li><a href="javascript:;">西风色</a></li>
+														<li><a href="javascript:;">Orange</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="seo" class="col-xs-3 control-label">
+												<h5>SEO关键字 <small>SEO</small></h5>
+											</label>
+											<div class="col-xs-8">
+												<input type="password" class="form-control" id="seo" placeholder="输入SEO关键字">
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="fimg" class="col-xs-3 control-label">
+												<h5>封面图 <small>Images</small></h5>
+											</label>
+											<div class="col-xs-8">
+												<div>
+													<img class="img-responsive" src="../../img/a5.png">
+												</div>
+												<label for="inputFile">
+													<p class="btn btn-danger">
+														<span class="icon-cloud-upload"></span>
+														<span>添加封面图片</span>
+													</p>
+													<input type="file" id="inputFile" style="visibility: hidden;" />
+												</label>
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="fenlei" class="col-xs-3 control-label">
+												<h5>添加分类 <small>Type</small></h5>
+											</label>
+											<div class="col-xs-8">
+												<input type="password" class="form-control" id="fenlei" placeholder="请添加分类用点号隔开">
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="arti" class="col-xs-3 control-label">
+												<h5>隐藏文章</h5>
+											</label>
+											<div class="col-xs-8">
+												<label class="jtoggler-wrapper">
+													<input type="checkbox" checked="" class="jtoggler">
+													<div class="jtoggler-control">
+														<div class="jtoggler-handle"></div>
+													</div>
+												</label>
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="text" class="col-xs-3 control-label">
+												<h5>文章内容</h5>
+											</label>
+											<div class="col-xs-8">
+												<textarea rows="10" id="text" class="form-control" placeholder="请输入文章内容"></textarea>
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="text" class="col-xs-3 control-label">
+							
+											</label>
+											<div class="col-xs-8">
+												<button class="btn btn-primary" type="button">提交</button>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+							
+							
+							
+							
+							<div class="border-form border-wrap">
+								<div class="home-money home-money1 color-white">
+									<div class="home-money1-top">
+										<span>换行边框表单</span>
+										<i class="icon-cog"></i>
+									</div>
+									<form class="">
+										<div class="form-group">
+											<label for="title" class="control-label">
+												<h5>标题<small> Title</small></h5>
+											</label>
+											<div class="">
+												<input type="email" class="form-control" id="title" placeholder="请输入标题文字">
+												<p>请填写标题文字10-20字左右。</p>
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="time" class=" control-label">
+												<h5>发布时间 <small>Time</small></h5>
+											</label>
+											<div class="">
+												<input type="password" class="form-control" id="time" placeholder="发布时间">
+												<p>发布时间为必填</p>
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="author" class=" control-label">
+												<h5>作者 <small>Author</small></h5>
+											</label>
+											<div class="">
+												<div class="dropdown">
+													<p id="author" data-toggle="dropdown">
+														-The.CC
+														<span class="caret"></span>
+													</p>
+													<ul class="dropdown-menu">
+														<li><a href="javascript:;">-The.CC</a></li>
+														<li><a href="javascript:;">西风色</a></li>
+														<li><a href="javascript:;">Orange</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="seo" class=" control-label">
+												<h5>SEO关键字 <small>SEO</small></h5>
+											</label>
+											<div class="">
+												<input type="password" class="form-control" id="seo" placeholder="输入SEO关键字">
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="fimg" class=" control-label">
+												<h5>封面图 <small>Images</small></h5>
+											</label>
+											<div class="">
+												<div>
+													<img class="img-responsive" src="../../img/a5.png">
+												</div>
+												<label for="inputFile">
+													<p class="btn btn-danger">
+														<span class="icon-cloud-upload"></span>
+														<span>添加封面图片</span>
+													</p>
+													<input type="file" id="inputFile" style="visibility: hidden;" />
+												</label>
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="fenlei" class=" control-label">
+												<h5>添加分类 <small>Type</small></h5>
+											</label>
+											<div class="">
+												<input type="password" class="form-control" id="fenlei" placeholder="请添加分类用点号隔开">
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="arti" class=" control-label">
+												<h5>隐藏文章</h5>
+											</label>
+												<label class="jtoggler-wrapper">
+													<input type="checkbox" checked="" class="jtoggler">
+													<div class="jtoggler-control">
+														<div class="jtoggler-handle"></div>
+													</div>
+												</label>
+										</div>
+										<div class="form-group">
+											<label for="text" class=" control-label">
+												<h5>文章内容</h5>
+											</label>
+											<div class="">
+												<textarea rows="10" id="text" class="form-control" placeholder="请输入文章内容"></textarea>
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="text" class=" control-label">
+							
+											</label>
+											<div class="">
+												<button class="btn btn-primary" type="button">提交</button>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+							
+							
+							
+						</div>
+					</div>
+				</div>
+			</div>
+	</body>
+</html>
+<script src="../../js/html.js"></script>
+<script src="../../js/base.js"></script>
+<script>
+	$(".form").addClass("active")
+</script>
